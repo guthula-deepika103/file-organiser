@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "file_organizer_assistant"
+version = "1.2.0"
+authors = [
+  { name="SmartCommunity Hack Team" },
+]
+description = "Production-grade desktop file organizer utility with interactive dry-run, audit persistence, and analytics reporting."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+file-organizer = "file_organizer.cli:main"
